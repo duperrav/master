@@ -30,6 +30,9 @@ jobs:
         with:
           java-version: '11.0.13'
       # Runs a single command using the runners shell
+      - name: Install node.js packages
+        run: npm install
+      
       - name: Run a one-line script
         run: echo Hello, world!
 
