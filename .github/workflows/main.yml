@@ -39,14 +39,18 @@ jobs:
      # - name: Test frontend local
      #   run: npm run test
       
-      - name: Etape supplementaire et test backend
-        run: chmod +x mvnw && npm run ci:backend:test
+     # - name: Etape supplementaire et test backend
+     #   run: chmod +x mvnw && npm run ci:backend:test
         
-      - name: Test backend local
-        run: npm run backend:unit:test
+     # - name: Test backend local
+     #   run: npm run backend:unit:test
         
-      - name: Test backend local win
-        run: npm run backend:unit:test:win
+    #  - name: Test backend local win
+    #    run: npm run backend:unit:test:win
+    
+      - name: 1ère commande
+        run: npm run test mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
+    
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
