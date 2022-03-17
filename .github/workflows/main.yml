@@ -39,8 +39,8 @@ jobs:
      # - name: Test frontend local
      #   run: npm run test
       
-     # - name: Etape supplementaire et test backend
-      #  run: chmod +x mvnw && npm run ci:backend:test
+      - name: Etape supplementaire et test backend
+        run: chmod +x mvnw && npm run ci:backend:test
         
       - name: Test backend local
         run: npm run backend:unit:test
