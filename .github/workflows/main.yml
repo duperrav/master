@@ -32,6 +32,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install node.js packages
         run: npm install
+        
+      - name: Test frontend
+        run: npm run ci:frontend:test
+        
+      - name: Test frontend local
+        run: npm run test
       
       - name: Run a one-line script
         run: echo Hello, world!
