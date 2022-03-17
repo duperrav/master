@@ -49,7 +49,7 @@ jobs:
     #    run: npm run backend:unit:test:win
     
       - name: 1ère commande
-        run: ./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
+        run: ./mvnw -Pprod clean verify
        
 
       # Runs a set of commands using the runners shell
