@@ -21,7 +21,7 @@
     "enableTranslation": true,
     "entities": ["Author", "Book"],
     "entitySuffix": "",
-    "herokuAppName": "myapplication",
+    "herokuAppName": "frozen-refuge-64816",
     "herokuDeployType": "jar",
     "herokuJavaVersion": "11",
     "jhiPrefix": "jhi",
