@@ -49,9 +49,13 @@ jobs:
      # - name: 1ère commande
      #   run: ./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
        
-      - name: 2ème commande
-        run: npm run ci:e2e:prepare:docker
+     # - name: 2ème commande
+     #   run: npm run ci:e2e:prepare:docker
 
+      - name: 3ème commande
+        run: npm run ci:e2e:teardown      
+      
+      
       # Runs a set of commands using the runners shell
     #  - name: Run a multi-line script
     #    run: |
