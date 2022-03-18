@@ -52,8 +52,8 @@ jobs:
       - name: 2ème commande
         run: npm run ci:e2e:prepare:docker    
      
-      - name: 3ème commande
-        run: npm run ci:e2e:run   
+      #- name: 3ème commande
+      #  run: npm run ci:e2e:run   
         
       - name: 4ème commande
         run: npm run ci:e2e:teardown  
