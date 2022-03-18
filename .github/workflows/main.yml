@@ -52,8 +52,11 @@ jobs:
      # - name: 2ème commande
      #   run: npm run ci:e2e:prepare:docker
 
+     # - name: 3ème commande
+     #   run: npm run ci:e2e:teardown      
+     
       - name: 3ème commande
-        run: npm run ci:e2e:teardown      
+        run: npm run ci:e2e:run   
       
       
       # Runs a set of commands using the runners shell
