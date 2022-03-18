@@ -43,11 +43,11 @@ jobs:
      #   run: chmod +x mvnw && npm run ci:backend:test
         run: chmod +x mvnw
         
-      - name: Test backend local
-        run: npm run backend:unit:test
+     # - name: Test backend local
+     #   run: npm run backend:unit:test
         
-    #  - name: Test backend local win
-    #    run: npm run backend:unit:test:win
+      - name: Test backend local win
+        run: npm run backend:unit:test:win
     
     #  - name: 1ère commande
     #    run: ./mvnw -Pprod clean verify
